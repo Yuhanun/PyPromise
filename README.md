@@ -35,7 +35,7 @@ if __name__ == '__main__':
 ## Feel free to pull request any changes / improvements you make :) ##
 
 # License #
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://github.com/Yuhanun/PyPromise/blob/master/LICENSE) file for details
+This project is licensed under the MIT License (yay, free code) - see the [LICENSE](https://github.com/Yuhanun/PyPromise/blob/master/LICENSE) file for details
 
 # Acknowledgments #
 Thanks to Guido for creating the language :)
