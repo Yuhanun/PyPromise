@@ -8,11 +8,28 @@ PyPromise.py
 ```
 
 Add it either to your sys.path, or move it to where you want to use it.
+
 Usage:
 ```py
 import PyPromise
 
 PyPromise.Promise(lambda: "Hello")
+```
+
+For example usage, check PyPromise.py
+
+```py
+if __name__ == '__main__':
+    def throw_error():
+        raise RuntimeError("Test")
+
+    Promise(lambda: throw_error()) \
+        .then(lambda: print("Succesfully finished")) \
+        .catch(lambda x: print(f"An exception has occured: {x}"))
+
+    Promise(lambda: print("Hello")) \
+        .then(lambda: print("Finished")) \
+        .catch(lambda x: print(x))
 ```
 
 ## Feel free to pull request any changes / improvements you make :) ##
