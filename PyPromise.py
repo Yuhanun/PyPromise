@@ -112,7 +112,7 @@ if __name__ == '__main__':
     def throw_error():
         raise RuntimeError("Test")
 
-    Promise(lambda: throw_error()) \
+    Promise(lambda: throw_error) \
         .then(lambda: print("Succesfully finished")) \
         .catch(lambda x: print(f"An exception has occured: {x}"))
 
